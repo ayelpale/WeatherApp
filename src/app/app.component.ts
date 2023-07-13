@@ -2,7 +2,16 @@ import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-root',
-  templateUrl: './app.component.html',
+  template: `
+  <weather 
+  city="Pune"
+  [low]="25"
+  [high]="65"
+  condition="rain"
+  >
+  </weather>
+  `
+  ,
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
